@@ -3,7 +3,8 @@
     let ui = {};
     
     let sendStringToSwift = (type, msg) => {
-        throw new Error("Not implemented");
+        let payload = b64Encode(type) + ":" + b64Encode(msg)
+        window.webkit.messageHandlers.interop.postMessage(payload);
     };
 
     let handleMessage = (type, value) => {
@@ -19,8 +20,8 @@
 
     window.sendStringToJavaScript = msg => {
         let parts = msg.split(':', 2);
-        let msgType = parts[0];
-        let msgValue = parts[1];
+        let msgType = b64Decode(parts[0]);
+        let msgValue = b64Decode(parts[1] || "");
         handleMessage(msgType, msgValue);
     };
     
