@@ -8,7 +8,7 @@ class ViewController: UIViewController, WKUIDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let myURL = URL(string:"https://www.blakeohare.com")
+        let myURL = Bundle.main.url(forResource: "index", withExtension: "html", subdirectory: "jsres")
         let myRequest = URLRequest(url: myURL!)
         webView.load(myRequest)
     }

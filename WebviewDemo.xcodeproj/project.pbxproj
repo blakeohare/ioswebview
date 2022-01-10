@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6997FF2A278BF3470029F9AA /* jsres in Resources */ = {isa = PBXBuildFile; fileRef = 6997FF29278BF3470029F9AA /* jsres */; };
 		69CA3539278BD0E300D99DB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA3538278BD0E300D99DB7 /* AppDelegate.swift */; };
 		69CA353B278BD0E300D99DB7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA353A278BD0E300D99DB7 /* SceneDelegate.swift */; };
 		69CA353D278BD0E300D99DB7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CA353C278BD0E300D99DB7 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6997FF29278BF3470029F9AA /* jsres */ = {isa = PBXFileReference; lastKnownFileType = folder; path = jsres; sourceTree = "<group>"; };
 		69CA3535278BD0E300D99DB7 /* WebviewDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WebviewDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CA3538278BD0E300D99DB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		69CA353A278BD0E300D99DB7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				69CA3538278BD0E300D99DB7 /* AppDelegate.swift */,
 				69CA353A278BD0E300D99DB7 /* SceneDelegate.swift */,
+				6997FF29278BF3470029F9AA /* jsres */,
 				69CA353C278BD0E300D99DB7 /* ViewController.swift */,
 				69CA353E278BD0E300D99DB7 /* Main.storyboard */,
 				69CA3541278BD0E500D99DB7 /* Assets.xcassets */,
@@ -126,6 +129,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CA3545278BD0E500D99DB7 /* LaunchScreen.storyboard in Resources */,
+				6997FF2A278BF3470029F9AA /* jsres in Resources */,
 				69CA3542278BD0E500D99DB7 /* Assets.xcassets in Resources */,
 				69CA3540278BD0E300D99DB7 /* Main.storyboard in Resources */,
 			);
