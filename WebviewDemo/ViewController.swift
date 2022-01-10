@@ -1,19 +1,22 @@
-//
-//  ViewController.swift
-//  WebviewDemo
-//
-//  Created by Blake O'Hare on 1/9/22.
-//
-
 import UIKit
+import WebKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, WKUIDelegate {
 
+    var webView: WKWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let myURL = URL(string:"https://www.blakeohare.com")
+        let myRequest = URLRequest(url: myURL!)
+        webView.load(myRequest)
     }
 
-
+    override func loadView() {
+        let webConfiguration = WKWebViewConfiguration()
+        webView = WKWebView(frame: .zero, configuration: webConfiguration)
+        webView.uiDelegate = self
+        view = webView
+    }
 }
-
